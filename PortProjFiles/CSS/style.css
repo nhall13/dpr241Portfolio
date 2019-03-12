@@ -59,9 +59,13 @@ main {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 20vh;
+    height: 40vh;
     flex: 0 1 60vw;
     margin: 0;
+}
+
+#qr-image {
+	resize:both;
 }
 
 .btn {

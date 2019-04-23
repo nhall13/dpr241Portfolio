@@ -1,6 +1,7 @@
 /* Mobile Devices */
 @import url('https://fonts.googleapis.com/css?family=Bitter');
 
+@media screen and (min-width: 450px) {
 body {
     font-family: 'Bitter', serif;
     margin: 0;
@@ -34,6 +35,7 @@ main {
     margin: auto;
     box-shadow: 30px 0px 40px rgba (0,0,0,0.4),
     -30px 0px 40px rgba (0,0,0,0.4);
+	text-align: center;
 }
 
 #landing {
@@ -42,8 +44,8 @@ main {
 
 #landing-text {
    display: flex;
-   flex: 0 1 40vw;
-   height: 50vh;
+    flex: 0 1 40vw;
+  height: 50vh; 
    justify-content: center;
    align-items: center;
    text-align: center;
@@ -60,7 +62,7 @@ main {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    height: 40vh;
+    height: 40vh; 
     flex: 0 1 60vw;
     margin: 0;
 }
@@ -116,9 +118,11 @@ footer {
     margin: auto;
     color: #333333;
 }
+}
 
-/* Screen Sizes 500px and Up */
-@media (min-width: 500px) {
+/* Screen Sizes 500px and Up  @media (min-width: 500px) {
+@media screen and (max-width: 600px) {
+	background-color: green;
     #landing { 
         display: flex;
         height: 100%;
@@ -129,10 +133,11 @@ footer {
     #landing-image {
         height: 100vh;
     }
-}
+}*/
 
 /* Screen Sizes 700px and Up */
 @media (min-width: 700px) {
+	background-color: red;
     .btn {
         padding: 1rem 3rem;
     }

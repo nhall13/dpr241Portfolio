@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <title>DPR241 Bootstrap Project</title>
+
+    <link href="css/bootstraptemplate.css" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet" >
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="style.css" rel="stylesheet"> 
+        
+
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js">
+      </script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js">
+      </script>
+    <![endif]-->
+
+</head>
+
+<body>
+<body background="dpr241Bootstrap/images/background.png">
+
+    <!--- <nav class="navbar navbar-toggleable-md navbar-light bg-info"> -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top"> 
+    <div class="container-fluid">    
+    <a class="navbar-brand" href="#V1">Visit</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarresponsive" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    </div>          
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+    <li class="nav-item active">
+    <a class="nav-link" href="#C1">Calender <span class="sr-only">(Events)</span></a>
+    </li>
+    <li class="nav-item">
+    <a class="nav-link" href="#E1">Exhibition</a>
+    </li>
+    <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#B1" id="dropdown01" 
+        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Buy Tickets</a>
+    <div class="dropdown-menu" aria-labelledby="dropdown01">
+        <a class="dropdown-item" href="#A1">Admission Prices</a>
+        <a class="dropdown-item" href="#M1">Membership Prices</a>
+        <a class="dropdown-item" href="#S1">Shop Souvenirs</a>
+    </div>
+        </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        </div>
+    </nav>
+
+    <main role="main" class="container">
+        <div class="projectheader">
+            <h1>DPR241 Bootstrap Project - Museum Co. Example</h1>
+            <img src="images/Museum1.png" alt="Museum">
+            <p class="hours">Hours: Monday - Saturday 10am to 3pm</p>
+        </div>
+
+        <div class="visitheader">
+            <h3 id="V1">Visit</h3>
+            <p class="location">123 Example Parkway, Media PA 12345</p>
+        </div>
+
+        <div class="calenderheader">
+            <h3 id="C1">Calender of Events</h3>           
+        </div>
+
+        <table class="table table-hover table-dark">
+            <thead>
+              <tr>
+                <th scope="col">Date</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col">Event</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Jan 1, 2019</th>
+                <td></td>
+                <td></td>
+                <td>Sculpture Art</td>
+              </tr>
+              <tr>
+                <th scope="row">Feb 1, 2019</th>
+                <td></td>
+                <td></td>
+                <td>Black Culture Art</td>
+              </tr>
+              <tr>
+                <th scope="row">March 1, 2019</th>
+                <td></td>
+                <td></td>
+                <td>Sculpture Art</td>
+              </tr>
+              <tr>
+                <th scope="row">April 1, 2019</th>
+                <td></td>
+                <td></td>
+                <td>Entertainment Art</td>
+              </tr>
+              <tr>
+                <th scope="row">May 1, 2019</th>
+                <td></td>
+                <td></td>
+                <td>Sculpture Art</td>
+              </tr>
+              <tr>
+                <th scope="row">Jun 1, 2019</th>
+                <td></td>
+                <td></td>
+                <td>Dance Art</td>
+              </tr>
+              <tr>
+                <th scope="row">July 1, 2019</th>
+                <td></td>
+                <td></td>
+                <td>Poetry Art</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <div class="exhibitionheader">
+            <h3 id="E1">Exhibition</h3>
+            <p class="exhibits">
+                What is Lorem Ipsum?
+                
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                when an unknown printer took a galley of type and scrambled it to make a type 
+                specimen book. It has survived not only five centuries, but also the leap into 
+                electronic typesetting, remaining essentially unchanged. It was popularised in 
+                the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, 
+                and more recently with desktop publishing software like Aldus PageMaker including 
+                versions of Lorem Ipsum.
+                </p>
+        </div>
+
+        <div class="buyheader">
+            <h3 id="B1">Buy Tickets</h3>
+            <p class="prices"> <h3 id="A1">Admission Prices</h3> 
+                <ul style="list-style-type:square;">
+                <li>Adults $10</li>
+                <li>Seniors $8</li>
+                <li>Students $4</li>
+                <li>Youth 13-18yrs $2</li>
+                <li>Kids 12-birth $Free</li>
+                <li>Members $Free</li>
+                </ul>
+            </p>
+        </div>
+
+
+        <div class="membershipheader">
+            <h3 id="M1">Membership Plan Prices </h3>
+            
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+              <table>
+                <thead>
+                  <tr>
+                    <th class="info"> 
+                      <h4 class="text-center" >Standard 1 yr plan</h4>
+                    </th>
+                    <th class="danger">
+                      <h4 class="text-center" >Premium 2 yr plan</h4>
+                    </th>
+                    <th class="info">
+                      <h4 class="text-center" >Renewal 1 or 2 yr plan</h4>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <h4 class="text-center">$100</h4>
+                    </td>
+                    <td>
+                      <h4 class="text-center">$70</h4>
+                    </td>
+                    <td>
+                      <h4 class="text-center">$100 yrly or $70 every 2 yr</h4>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>Dolor sit amet</td>
+                    <td>Lorem ipsum</td>
+                    <td>Lorem ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>-</td>
+                    <td>Dolor sit amet</td>
+                    <td>Lorem ipsum</td>
+                  </tr>
+                  <tr>
+                    <td>-</td>
+                    <td>-</td>
+                    <td>Lorem ipsum</td>
+                  </tr>
+                  <tr>
+                    <td><a href="#M1" class="btn btn-info btn-block">Purchase</a></td>
+                    <td><a href="#M1" class="btn btn-danger btn-block">Purchase</a></td>
+                    <td><a href="#M1" class="btn btn-info btn-block">Purchase</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="souvenirheader">
+            <h3 id="S1">Shop Souvenirs</h3>
+            <p class="location">The Example Store
+                <ul style="list-style-type:square;">
+                    <li>Sweat Shirts $25</li>
+                    <li>T-Shirts $12</li>
+                    <li>Posters $5</li>
+                    <li>Keychains $2</li>    
+                    </ul>
+            </p>
+        </div>
+
+        <h3>Contact Form</h3>
+
+            <div class="container">
+            <form action="/action_page.php">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+            <label for="email">Submit your email:</label>
+            <input type="text" id="email" name="email" placeholder="Your email..">
+
+            <label for="country">Country</label>
+            <select id="country" name="country">
+            <option value="usa">USA</option>
+            <option value="canada">Canada</option>
+            </select>
+
+            <label for="subject">Comments:</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+
+            <input type="submit" value="Submit">
+            </form>
+            </div>
+       
+    </main>         
+              
+    <footer class="row jumbotron">
+            <div class="col-md-2">
+              <img src="images/Museum2.jpg" class="img-responsive">
+            </div>
+            <div class="col-md-7">
+              <ul class="list-inline list-unstyled">
+                <li><a href="https://nhall13.github.io/dpr241Portfolio/">WebPage By Naomi Hall</a></li>
+                <li><a href="#">DPR241 Bootstrap Project</a></li>
+                <li><a href="#V1">Contact</a></li>
+              </ul>
+            </div>
+            <div class="col-md-3">
+              <address>
+                <strong>Example Museum, Co.</strong><br>
+                123 Example Parkway<br>
+                Media PA 12345<br>
+                <abbr title="Phone">P:</abbr> (123) 456-7890
+              </address>
+            </div>
+          </footer>          
+                
+
+    
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.3/assets/js/vendor/jquery-slim.min.js"><\/script>')</script><script src="/docs/4.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-xrRywqdh3PHs8keKZN+8zzc5TX0GRTLCcmivcbNJWm2rs5C8PRhcEn3czEjhAO9o" crossorigin="anonymous"></script></body>
+
+
+    <script src="dpr241Bootstrap/js/jquery-3.4.0.min.map"></script>
+    <script src="dpr241Bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

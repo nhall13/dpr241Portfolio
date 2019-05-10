@@ -1,0 +1,144 @@
+main{
+    display: flex;
+    height: 100wh;
+}
+.flex-container {
+    display: flex;
+  }
+
+@media screen and (min-width:450px){
+    main{
+        flex-direction: column;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+      }
+    img {
+        max-width: 100%;
+        height: auto;   
+    }
+    body {
+        font-family: 'Bitter', serif;
+        margin: 0;
+        background: #654321;
+        height: auto;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: column;
+      }
+    footer {
+        text-align: center;
+        padding: 2rem 1rem;
+        margin: auto;
+        color: #ffffff;
+    }
+}
+/* Mobile Devices */
+@import url('https://fonts.googleapis.com/css?family=Bitter');
+
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 0;
+}
+h3 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin: 0;
+    text-align: center;
+}
+article {
+    text-align: left;
+}
+p {
+    text-align: left;
+}
+img {
+    
+    max-width: 100%;
+    height: auto;
+    
+}
+.artsupplies {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+main {
+    flex-direction: column;
+    max-width: 900px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba (0,0,0,0.4),
+    -30px 0px 40px rgba (0,0,0,0.4);
+	text-align: center;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+@media screen and (max-width:600px){
+    main{
+        flex-direction: row;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+      }
+    body {
+        font-family: 'Bitter', serif;
+        margin: 0;
+        background: #654321;
+        height: auto;
+    }
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+      }
+    footer {
+        text-align: center;
+        padding: 2rem 1rem;
+        margin: auto;
+        color: #333333;
+    }
+}
+
+@media screen and (max-width:800px){
+    main{
+        flex-direction: row;
+    }
+    body {
+        font-family: 'Bitter', serif;
+        margin: 0;
+        background: #654321;
+        height: auto;
+    }
+    footer {
+        text-align: center;
+        padding: 2rem 1rem;
+        margin: auto;
+        color: #ffffff;
+    }
+}
+nav,h1,p{
+    flex-grow:1;
+}
+nav {
+    background: #6F96E6;
+}
+h1 {
+    background: #e6e6fa;
+}
